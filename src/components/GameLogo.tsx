@@ -33,7 +33,7 @@ const GameLogo: React.FC<GameLogoProps> = ({
         <img
           src={img}
           alt="Game Logo"
-          className="rounded-xl"
+          className="rounded-xl h-52 object-cover"
         />
       </div>
     </Link>
