@@ -6,12 +6,20 @@ type GameLogoProps = {
   game: string;
   img: string;
   url: string;
+  shadow?: string;
 };
 
-const GameLogo: React.FC<GameLogoProps> = ({ game, img, url }) => {
+const GameLogo: React.FC<GameLogoProps> = ({
+  game,
+  img,
+  url,
+  shadow = "#8b83ff",
+}) => {
   return (
     <Link to={url}>
-      <div className="card w-52 h-52 rounded-xl overflow-hidden drop-shadow-[0px_0px_10px_#8b83ff]">
+      <div
+        className={`card w-52 h-52 rounded-xl overflow-hidden drop-shadow-[0px_0px_10px_${shadow}]`}
+      >
         <div className="overlay absolute rounded-xl">
           <div className="h-32 max-w-[12rem] break-all text-2xl pt-6 flex items-center px-4">
             {game}
@@ -22,7 +30,11 @@ const GameLogo: React.FC<GameLogoProps> = ({ game, img, url }) => {
             </span>
           </div>
         </div>
-        <img src={img} alt="Game Logo" className="rounded-xl object-contain" />
+        <img
+          src={img}
+          alt="Game Logo"
+          className="rounded-xl"
+        />
       </div>
     </Link>
   );
