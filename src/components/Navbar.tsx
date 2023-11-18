@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-screen bg-gray-900 flex justify-center">
+      <nav className="fixed top-0 left-0 z-10 w-screen bg-gray-900 flex justify-center">
         <ul className="container flex">
           <Menu to="/">Home</Menu>
           <Menu to="/about">About us</Menu>
