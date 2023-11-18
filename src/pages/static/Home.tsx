@@ -4,6 +4,7 @@ import "./../../assets/CSS/wave.css";
 import Hero from "../../components/Hero";
 import Wave from "../../components/Wave";
 import PuzzleHouseLogo from "../../assets/gameLogo/puzzle-house-logo.png";
+import FlappyBirdLogo from "../../assets/gameLogo/flappy-bird-logo.png";
 import GameLogo from "../../components/GameLogo";
 
 const Home: React.FC = () => {
@@ -19,9 +20,9 @@ const Home: React.FC = () => {
             url="/puzzle-house"
           />
           <GameLogo
-            game="Puzzle House"
-            img={PuzzleHouseLogo}
-            url="/puzzle-house"
+            game="Flappy Bird"
+            img={FlappyBirdLogo}
+            url="/flappy-bird"
           />
           <GameLogo
             game="Puzzle House"
