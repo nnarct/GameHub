@@ -5,6 +5,7 @@ import Home from "./pages/static/Home";
 import AboutUs from "./pages/static/AboutUs";
 import Contact from "./pages/static/Contact";
 import PuzzleHouse from "./pages/games/PuzzleHouse";
+import FlappyBird from "./pages/games/FlappyBird";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="about" element={<AboutUs />} />
             <Route path="contact" element={<Contact />} />
             <Route path="puzzle-house" element={<PuzzleHouse />} />
+            <Route path="flappy-bird" element={<FlappyBird />} />
           </Route>
         </Routes>
       </BrowserRouter>
