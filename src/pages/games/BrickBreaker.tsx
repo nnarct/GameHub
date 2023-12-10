@@ -9,7 +9,7 @@ const BrickBreaker = () => {
   });
 
   return (
-    <div className="bg-[#1a1a1a] min-h-screen flex flex-col items-center justify-center pb-8">
+    <div className="bg-slate-800 min-h-screen flex flex-col items-center justify-center pb-8">
       <Unity
         unityProvider={unityProvider}
         style={{
