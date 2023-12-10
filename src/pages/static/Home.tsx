@@ -2,6 +2,7 @@ import React from "react";
 import "./../../assets/CSS/wave.css";
 import Hero from "../../components/Hero";
 import Wave from "../../components/Wave";
+import Advertise from "../../components/Advertise";
 import GameLogo from "../../components/GameLogo";
 import PuzzleHouseLogo from "../../assets/gameLogo/puzzle-house-logo.png";
 import FlappyBirdLogo from "../../assets/gameLogo/flappy-bird-logo.png";
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="min-h-screen bg-slate-800">
+        <Advertise />
         <Hero />
         <Wave />
         <div className="container mx-auto py-8 px-4 gap-16 flex justify-center flex-wrap">
