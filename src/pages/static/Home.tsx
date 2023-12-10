@@ -2,9 +2,10 @@ import React from "react";
 import "./../../assets/CSS/wave.css";
 import Hero from "../../components/Hero";
 import Wave from "../../components/Wave";
+import GameLogo from "../../components/GameLogo";
 import PuzzleHouseLogo from "../../assets/gameLogo/puzzle-house-logo.png";
 import FlappyBirdLogo from "../../assets/gameLogo/flappy-bird-logo.png";
-import GameLogo from "../../components/GameLogo";
+import BrickBreakerLogo from "../../assets/gameLogo/brick-breaker-logo.png"
 
 const Home: React.FC = () => {
   return (
@@ -24,9 +25,9 @@ const Home: React.FC = () => {
             url="/flappy-bird"
           />
           <GameLogo
-            game="Puzzle House"
-            img={PuzzleHouseLogo}
-            url="/puzzle-house"
+            game="Brick Breaker"
+            img={BrickBreakerLogo}
+            url="/brick-breaker"
           />
 
           <GameLogo
